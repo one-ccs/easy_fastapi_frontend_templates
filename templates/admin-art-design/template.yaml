@@ -1,0 +1,26 @@
+id: "admin-art-design"
+display_name:
+  zh: "管理后台（Art Design Pro）"
+  en: "Admin Panel (Art Design Pro)"
+description:
+  zh: "基于 Vue 3 + Element Plus + Tailwind CSS 的后台管理系统（Art Design Pro 模板）"
+  en: "Vue 3 + Element Plus + Tailwind CSS admin panel (Art Design Pro template)"
+version: "1.0.0"
+stack:
+  framework: "vue3"
+  ui_library: "element-plus"
+  language: "typescript"
+  build_tool: "vite"
+tags: ["admin", "element-plus", "vue3", "tailwindcss"]
+requires:
+  frontend: true
+  auth: true
+  database: true
+install_name: "admin"
+post_messages:
+  zh:
+    - "管理后台已安装到 frontend/apps/admin/"
+    - "运行 pnpm --filter @{{ package_name }}/admin dev 启动开发服务器"
+  en:
+    - "Admin panel installed to frontend/apps/admin/"
+    - "Run pnpm --filter @{{ package_name }}/admin dev to start dev server"

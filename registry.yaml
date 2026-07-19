@@ -1,0 +1,44 @@
+schema_version: 1
+updated_at: "2026-07-12T00:00:00Z"
+
+source:
+  type: "github"
+  repo: "one-ccs/easy_fastapi_frontend_templates"
+  ref: "main"
+
+templates:
+  - id: "admin-art-design"
+    display_name:
+      zh: "管理后台（Art Design Pro）"
+      en: "Admin Panel (Art Design Pro)"
+    description:
+      zh: "基于 Vue 3 + Element Plus + Tailwind CSS 的后台管理系统（Art Design Pro 模板）"
+      en: "Vue 3 + Element Plus + Tailwind CSS admin panel (Art Design Pro template)"
+    version: "1.0.0"
+    stack:
+      framework: "vue3"
+      ui_library: "element-plus"
+      language: "typescript"
+      build_tool: "vite"
+    tags: ["admin", "element-plus", "vue3", "tailwindcss"]
+    requires:
+      frontend: true
+      auth: true
+      database: true
+
+  - id: "client-h5"
+    display_name:
+      zh: "H5 移动客户端"
+      en: "H5 Mobile Client"
+    description:
+      zh: "基于 Vue 3 + Vant 的移动端 H5 应用"
+      en: "Vue 3 + Vant mobile H5 app"
+    version: "1.0.0"
+    stack:
+      framework: "vue3"
+      ui_library: "vant"
+      language: "typescript"
+      build_tool: "vite"
+    tags: ["client", "h5", "mobile", "vant"]
+    requires:
+      frontend: true
